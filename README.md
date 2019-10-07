@@ -42,6 +42,13 @@ For more information and documentation on EDirect, please see:
 
 ## EDirect Scripts
 
+### Get all records from a Genbank Division
+
+Description (optional): Genbank is artificially divided into [divisions]https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html#GenBankDivisionB. This command gets all 'bacteriophage sequences'. Note that many records are redundant and partial.
+
+```
+esearch -db nucleotide -query gbdiv_phg[prop]
+```
 ### Get all proteins from a nucleotide interval in a genome
 
 Description (optional):  
