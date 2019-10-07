@@ -46,6 +46,9 @@ For more information and documentation on EDirect, please see:
 
 Description (optional): Genbank is artificially divided into [divisions]https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html#GenBankDivisionB. This command gets all 'bacteriophage sequences'. Note that many records are redundant and partial.
 
+### Get assembly from taxID
+elink -db taxonomy -target assembly -name taxonomy_assembly -id 645116
+
 ```
 esearch -db nucleotide -query gbdiv_phg[prop]
 ```
