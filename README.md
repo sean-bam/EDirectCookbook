@@ -45,13 +45,17 @@ For more information and documentation on EDirect, please see:
 ### Get all records from a Genbank Division
 
 Description (optional): Genbank is artificially divided into [divisions]https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html#GenBankDivisionB. This command gets all 'bacteriophage sequences'. Note that many records are redundant and partial.
-
-### Get assembly from taxID
-elink -db taxonomy -target assembly -name taxonomy_assembly -id 645116
+Written by: Sean Benler
+Confirmed by: 
+Databases: Nucleotide
 
 ```
 esearch -db nucleotide -query gbdiv_phg[prop]
 ```
+
+### Get assembly from taxID
+elink -db taxonomy -target assembly -name taxonomy_assembly -id 645116
+
 ### Get all proteins from a nucleotide interval in a genome
 
 Description (optional):  
