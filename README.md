@@ -42,6 +42,12 @@ For more information and documentation on EDirect, please see:
 
 ## EDirect Scripts
 
+### Get taxonomy from an accession
+Written by: Scot McGinnis
+Confirmed by: 
+Databases: Nucleotide
+esearch -db nuccore -query "KY820767" | efetch -format gpc | xtract -pattern INSDSeq -element INSDSeq_primary-accession INSDSeq_organism INSDSeq_taxonomy
+
 ### Get all records from a Genbank Division
 
 Description (optional): Genbank is artificially divided into [divisions]https://www.ncbi.nlm.nih.gov/Sitemap/samplerecord.html#GenBankDivisionB. This command gets all 'bacteriophage sequences'. Note that many records are redundant and partial.
