@@ -42,6 +42,9 @@ For more information and documentation on EDirect, please see:
 
 ## EDirect Scripts
 
+### Get a sequence read from the SRA with accession and SpotIDs
+>fastq-dump -A SRR1803613 -N 479767 -X 479767 --fasta
+
 ### Get taxonomy from an accession
 Written by: Scot McGinnis
 Confirmed by: 
